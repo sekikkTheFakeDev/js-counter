@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    --bg: #252EA2;
+    --text: #F0F2FF;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Ubuntu;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#holder {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#number {
+    font-size: 200px;
+}
+
+p {
+    font-family: Ubuntu;
+}
+
+.btn{
+    font-family: Ubuntu;
+    font-size: 25px;
+    background-color: var(--text);
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 25%;
+    height: 7%;
+    cursor: pointer;
+    box-shadow: 0 5px 0 rgba(0,0,0,.5);
+    user-select: none;
+}
+
+#btn {
+    width: 25%;
+    height: 7%;
+    padding: 20px;
+    text-align: center;
+    line-height: 7%;    
+}
+
+#btn2 {
+    width: 10%;
+    height: 7%;
+    padding: 22px;
+    font-size: 23px;
+    text-align: center;
+    line-height: 7%;    
+}
+
+.btn:active {
+    box-shadow: 0 3px 0 rgba(0,0,0,.5);
+    transform: translateY(2px);
+}
+
+@media only screen and (max-width: 1265px) {
+    #btn2 {
+        font-size: 16px;
+        padding: auto 50px !important;
+    }
+}
